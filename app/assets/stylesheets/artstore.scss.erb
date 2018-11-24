@@ -1,5 +1,19 @@
+$sidebar-bgcolor: #3c3f41;
+$sidebar-fixed-width: 250px;
+$sidebar-fixed-height: 100vh;
+$content-fixed-height: 100vh;
+$content-header-fixed-height: 60px;
+$content-header-bgcolor: #d2d2d2;
+$content-body-padding: 15px 15px 0 15px;
+$content-body-bgcolor: #ededed;
+$content-footer-fixed-height: 40px;
+$content-footer-bgcolor: #6f6f6f;
+
+
 body, html {
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 #wrapper{
@@ -15,7 +29,52 @@ body, html {
 
 
 #sidebar{
-   min-width: 80px;
-   max-width: 80px;
-   background-color: blue;
+   flex: 0 1 auto;
+   min-width: $sidebar-fixed-width;
+   max-width: $sidebar-fixed-width;
+   background-color: $sidebar-bgcolor;
+   min-height: $sidebar-fixed-height;
+   color: white;
+   margin: 0;
+   padding: 0;
+   transition: all 0.2s linear;
+}
+
+#content{
+   flex: 2;
+   flex-direction: column;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -moz-flex;
+   display: -webkit-flex;
+   display: flex;
+   min-height: $content-fixed-height;
+}
+
+#content-header{
+   flex: 0 1 auto;
+   max-height: $content-header-fixed-height;
+   min-height: $content-header-fixed-height;
+   background-color: $content-header-bgcolor;
+   display: flex;
+   align-items: center;
+}
+
+#content-body{
+   flex: 2;
+   padding: $content-body-padding;
+   padding-bottom: 100px;
+   background-color: $content-body-bgcolor;
+}
+
+#content-footer{
+   flex: 0 1 auto;
+   max-height: $content-footer-fixed-height;
+   min-height: $content-footer-fixed-height;
+   line-height: $content-footer-fixed-height;
+   background-color: $content-footer-bgcolor;
+   color: white;
+   text-align: center;
+   vertical-align: middle;
 }
