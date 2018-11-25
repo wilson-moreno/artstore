@@ -8,15 +8,26 @@
 
         <body>
               <div id="wrapper">
-                   <nav id="sidebar" class="shrink">Sidebar</nav>
+                   <nav id="sidebar" class="shrink">
+										   <%= render 'shared/sidebar' %>
+									 </nav>
                    <div id="content">
-                        <div id="content-header">Header</div>
-                        <div id="content-body">Body</div>
-                        <div id="content-footer">Footer</div>
+                        <div id="content-header">
+													<%= render 'shared/content_header' %>
+												</div>
+                        <div id="content-body">
+                          <div class="container-fluid">
+                             <%= yield %>
+													</div>
+												</div>
+                        <div id="content-footer">
+													<%= render 'shared/content_footer' %>
+												</div>
                    </div>
               </div>
+
+							<%= render 'layouts/javascripts' %>
         </body>
 
 
 </html>
-

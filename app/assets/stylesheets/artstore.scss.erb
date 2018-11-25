@@ -8,6 +8,8 @@ $content-body-padding: 15px 15px 0 15px;
 $content-body-bgcolor: #ededed;
 $content-footer-fixed-height: 40px;
 $content-footer-bgcolor: #6f6f6f;
+$li-border-top-color: #222222;
+$li-border-bottom-color: #222222;
 
 
 body, html {
@@ -39,6 +41,36 @@ body, html {
    padding: 0;
    transition: all 0.2s linear;
 }
+
+#sidebar .brand {
+    padding: 10px 10px 10px 10px;
+    background: $sidebar-bgcolor;
+    display: block;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sidebar .brand > span{
+  min-width: 80px;
+  min-height: 80px;
+  border: 2px solid white;
+  padding: 5px 5px 5px 5px;
+  line-height: 80px;
+}
+
+#sidebar ul.menubar{
+  padding: 0;
+}
+
+#sidebar ul.menubar li{
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  border-top: 1px solid $li-border-top-color;
+}
+
 
 #content{
    flex: 2;
