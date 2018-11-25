@@ -42,6 +42,11 @@ body, html {
    transition: all 0.2s linear;
 }
 
+#sidebar.minimize{
+    min-width: 0;
+    max-width: 0;
+}
+
 #sidebar .brand {
     padding: 10px 10px 10px 10px;
     background: $sidebar-bgcolor;
@@ -50,6 +55,10 @@ body, html {
     font-size: 2em;
     text-align: center;
     font-weight: bold;
+}
+
+#sidebar .minimize .brand{
+   display: none;
 }
 
 #sidebar .brand > span{
@@ -64,13 +73,28 @@ body, html {
   padding: 0;
 }
 
-#sidebar ul.menubar li{
+#sidebar ul.menubar  li{
   list-style: none;
   padding: 0;
   margin: 0 auto;
   border-top: 1px solid $li-border-top-color;
 }
 
+#sidebar ul.menubar  li  a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+#sidebar ul.menubar  li  a:hover{
+  background-color: white;
+  color: $sidebar-bgcolor;
+}
+
+#sidebar ul.menubar.link-text{
+  padding-left: 15px;
+}
 
 #content{
    flex: 2;
@@ -109,4 +133,30 @@ body, html {
    color: white;
    text-align: center;
    vertical-align: middle;
+}
+
+#sidebar-nav-button{
+   margin: 0 15px 0 15px;
+   flex: 0 1 auto;
+}
+
+/* CSS from Album.css */
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron{
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron-heading{
+  font-weight: 300;
+}
+
+.jumbotron .container{
+  max-width: 40rem;
 }

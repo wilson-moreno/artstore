@@ -1,7 +1,7 @@
 module ApplicationHelper
 
        def full_title(page_title = '')
-           base_title = "ArtStore"
+           base_title = "LeybiArt"
 
            if page_title.empty?
               base_title
@@ -9,6 +9,6 @@ module ApplicationHelper
               page_title + " | " + base_title
            end
        end
-  
+
 
 end
