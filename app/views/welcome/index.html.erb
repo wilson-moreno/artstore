@@ -2,10 +2,87 @@
 
 <section class="jumbotron text-center">
   <div class="container">
-    <h1 class="jumbtron-heading">Creatively</h1>
+    <h1 class="jumbtron-heading"><%= image_tag 'logo.png', class: "logo" %></h1>
     <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget nisl nec diam ullamcorper fermentum a at ipsum. Vivamus id mi dolor. Cras consectetur tellus eu metus mattis, sed placerat massa tempus. In hac habitasse platea dictumst. Cras sapien nisi, lobortis eget ex eget, molestie consectetur nisl. Mauris at rutrum augue. Proin aliquam vulputate nulla, eu laoreet leo molestie a. Sed quis facilisis mauris. Donec eu blandit magna. Morbi vitae placerat dui, vitae varius turpis. Cras in pretium mauris, venenatis porta ligula. Integer laoreet diam eu velit consectetur, a convallis magna ullamcorper. Donec tincidunt lobortis ipsum a vestibulum. Nam congue sit amet purus id sagittis. Fusce ultricies sollicitudin velit eu bibendum. Cras porta facilisis nibh, sit amet fermentum orci vestibulum nec. </p>
   </div>
 </section>
+
+<div class="row">
+<div class="col-1-md">
+<div class="carousel-wrapper border rounded">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag 'carousel/10001.png', class: "d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Image 1</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/10002.png', class: "d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Image 1</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/10003.png', class: "d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Image 1</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/10004.png', class: "d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Image 1</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/10005.png', class: "d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Image 1</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/10006.png', class: "d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Image 1</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/10007.png', class: "d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Image 1</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</div>
+</div>
 
 <div class="album py-5 bg-light">
    <div class="container">
@@ -13,9 +90,11 @@
      <div class="row">
        <div class="col-md-4">
          <div class="card mb-4 shadow-sm">
-            <%= image_tag "10001.png", class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="card-image-container">
+               <%= image_tag "10001.png", class: "card-img-top" %>
+               <div class="description-shape">
+                  <div class="text">Price</div>
+               </div>
             </div>
          </div>
        </div>
@@ -23,54 +102,36 @@
        <div class="col-md-4">
          <div class="card mb-4 shadow-sm">
             <%= image_tag "10002.png", class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
          </div>
        </div>
 
        <div class="col-md-4">
          <div class="card mb-4 shadow-sm">
             <%= image_tag "10003.png", class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
          </div>
        </div>
 
        <div class="col-md-4">
          <div class="card mb-4 shadow-sm">
             <%= image_tag "10004.png", class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
          </div>
        </div>
 
        <div class="col-md-4">
          <div class="card mb-4 shadow-sm">
             <%= image_tag "10005.png", class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
          </div>
        </div>
 
        <div class="col-md-4">
          <div class="card mb-4 shadow-sm">
             <%= image_tag "10006.png", class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
          </div>
        </div>
 
        <div class="col-md-4">
          <div class="card mb-4 shadow-sm">
             <%= image_tag "10007.png", class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
          </div>
        </div>
      </div>
